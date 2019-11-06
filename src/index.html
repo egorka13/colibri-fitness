@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#fe99cd"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Женская фитнес-студия Colibri Fitness, Author: https://github.com/egorka13">
+    <title>Colibri Fitness</title>
+    <link rel="stylesheet" href="assets/themes/base/styles/style.css?version=1.0.16">
+
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!-- Wizard CSS-->
+    <link rel="stylesheet" href="assets/themes/base/styles/wizard.css" media="all">
+
+    <!-- Jquery JS -->
+    <script src="assets/scripts/jquery/jquery.min.js"></script>
+    <script src="assets/scripts/jquery.maskedinput.min.js"></script>
+
+    <!-- Vendor JS-->
+    <script src="assets/scripts/jquery-validate/jquery.validate.min.js"></script>
+    <script async src="assets/scripts/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <div class="c-block-burger">
+            <div class="c-block-burger__icon">
+                <input type="checkbox" id="burger_icon" class="checkbox3 visuallyHidden">
+                <label for="burger_icon">
+                    <div class="hamburger hamburger3">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+
+            <div id="burger__menu" class="c-block-burger__menu">
+                <nav>
+                    <ul class="c-block-burger__menu-list">
+                        <li class="c-block-burger__menu-item"><a href="#yak1">1. Главная</a></li>
+                        <li class="c-block-burger__menu-item"><a href="#yak2">2. О студии</a></li>
+                        <li class="c-block-burger__menu-item"><a href="#yak3">3. Тренеры</a></li>
+                        <!-- <li class="c-block-burger__menu-item"><a href="#yak4">4. Цены</a></li> -->
+                        <li class="c-block-burger__menu-item"><a href="#yak5">4. Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- <section id="yak1" class="c-block-promotion">
+            <div id="c-block-promotion" class="c-block-promotion__left">
+                <span class="c-block-promotion__left-caption">Занимайся фитнесом неделю<br>
+                    <span style="font-style: italic; font-weight: bold">всего за 1000 рублей! (до 20.10)</span>
+                </span>
+            </div>
+            <div class="c-block-promotion__center"></div>
+            <div class="c-block-promotion__right"></div>
+        </section> -->
+
+        <section id="yak1" class="c-block-1">
+            <div class="c-block-1__header">
+                <div class="c-block-1__header-address">
+                    <table>
+                        <tr>
+                            <td class="c-block-1__header-address-location"><strong style="color: rgb(254, 229, 153);">7
+                                    минут</strong> от метро <br> Проспект Мира
+                            </td>
+                            <td>г. Москва, Протопоповский <br> переулок, д. 40</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- <img src="assets/themes/base/img/backgrounds/location-mobile.png" alt="location-icon"
+                    class="c-block-1__header-location-icon" id="location-icon" height="40"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                    style="fill:rgb(254, 229, 153);" class="c-block-1__header-location-icon" id="location-icon">
+                    <path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661
+                     0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188
+                      8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 
+                      3-1.343 3-3 3z" /></svg>
+                <div class="c-block-1__header-logo">
+                    <a href="/">
+                        <img src="assets/themes/base/img/c-block-1-logo.png" alt="Логотип Colibri Fitness">
+                    </a>
+                </div>
+                <div class="c-block-1__header-contacts">
+                    <div class="c-block-1__header-contacts-phone">
+                        <a href="tel:84951202282" class="c-block-1__header-contacts-phone-link">+7 (495) 120-22-82</a>
+                    </div>
+                    <div class="c-block-1__header-contacts-hours">Пн-Пт 7:00 - 23:00 <br> Сб-Вс 9:00 - 22:00</div>
+                </div>
+                <img src="assets/themes/base/img/backgrounds/phone-mobile.png" alt="phone-icon"
+                    class="c-block-1__header-phone-icon" id="phone-icon" height="35" style="display: none;">
+                <div id="whatsapp-icon" style="display: none;">
+                    <a href="https://wa.me/79150643919">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style="fill:rgb(254, 229, 153);"
+                            class="c-block-1__header-phone-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 
+                        5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 
+                        6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 
+                        3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 
+                        4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="c-block-1__body">
+                <div class="c-block-1__body-caption">Женская <br>фитнес-студия <br><strong>Colibri Fitness</strong>
+                </div>
+                <div class="c-block-1__body-description">Только девушки <br> и никаких мужчин</div>
+                <button type="button" id="c-block-1-button" class="c-block-1__body-button">Персональная тренировка за
+                    790 руб.
+                    <img src="assets/themes/base/img/backgrounds/c-block-1-pink-rose.png" alt="pink-rose"></button>
+                <div class="c-block-1__body-scroll">
+                    <div class="c-block-1__body-scroll-icon">
+                        <img src="assets/themes/base/img/backgrounds/mouse.png" alt="mouse">
+                    </div>
+                    <div class="c-block-1__body-scroll-text">Листайте <br> вниз</div>
+                </div>
+                <div class="c-block-1__body-timetable">
+                    <span>Посмотреть <br>расписание <br>групповых программ <br></span>
+                    <a href="assets/files/timetable.jpg" target="_blank" class="c-block-1__body-timetable-link">Открыть
+                        <br>расписание</a>
+                    <img class="c-block-1__body-timetable-journal1" src="assets/themes/base/img/backgrounds/journal.png"
+                        alt="journal">
+                    <img class="c-block-1__body-timetable-journal2"
+                        src="assets/themes/base/img/backgrounds/journal-mobile.png" alt="journal">
+                </div>
+                <img class="c-block-1__body-woman" src="assets/themes/base/img/backgrounds/c-block-1-woman.png"
+                    alt="Девушка">
+            </div>
+
+            <div id="c-block-1-bg_layer" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+background: black; opacity: 0.5; z-index: 999;"></div>
+            <div id="location-popup" class="c-block-1__location-popup">
+                <span class="close">&times;</span>
+                <img src="assets/themes/base/img/backgrounds/location-mobile.png" alt="location-icon"
+                    class="c-block-1__location-popup-icon" height="25">
+                <div class="c-block-1__location-popup-address">
+                    <strong style="color: rgb(254, 229, 153);">7 минут</strong>
+                    от метро <br> Проспект Мира <br><br>г. Москва, Протопоповский <br> переулок, д. 40
+                </div>
+            </div>
+
+            <div id="phone-popup" class="c-block-1__phone-popup">
+                <span class="close">&times;</span>
+                <img src="assets/themes/base/img/backgrounds/phone-mobile.png" alt="location-icon"
+                    class="c-block-1__phone-popup-icon" height="25">
+                <div class="c-block-1__phone-popup-phone">
+                    <a href="tel:84951202282" class="c-block-1__phone-popup-phone-link">+7 (495) 120-22-82</a>
+                    <div class="c-block-1__phone-popup-hours"><br>Пн-Пт 7:30 - 22:30 <br> Сб-Вс 9:00 - 22:00</div>
+                </div>
+            </div>
+
+            <div id="c-block-1-popup" class="c-block-1__download-popup">
+                <div class="c-block-1-popup-wrapper" style="width: min-content;">
+                    <img src="assets/themes/base/img/c-block-1-logo.png" alt="logo"
+                        style="display: block; margin: 0 auto; padding: 15px 0;" height="70">
+                    <div class="c-block-1__download-popup-caption">Выбери специальное предложение<br>
+                        <span style="font-style: italic; font-weight: bold; color: #fe99cd;">всего за 790 рублей!</span>
+                        <br>
+                        <!--<span style="font-size: 17px; font-style: italic;">(успей подать заявку <span style="font-weight: bold;">до 20 октября</span>)</span>-->
+                    </div>
+                    <form action="mail_promotion.php" method="POST" class="c-block-8__form-block"
+                        id="c-block-1-popup-form">
+                        <label class="label">
+                            <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar" class="label-avatar">
+                            <input type="text" required name="user_name" class="field" placeholder="Введите ваше имя">
+                        </label>
+                        <label class="label">
+                            <img src="assets/themes/base/img/backgrounds/phone_pink.png" alt="phone_pink"
+                                class="label-phone_pink">
+                            <input type="tel" required name="user_phone" class="field phone_mask"
+                                placeholder="Введите ваш телефон">
+                        </label>
+                        <!-- <div class="c-block-1__download-popup-caption">Занимались ли вы раньше <br>в фитнес-клубах?</div> -->
+                        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                            <input id="special_1" name="special_offer" type="radio" value="3 дня групповых занятий"
+                                checked>
+                            <label for="special_1" title="3 дня групповых занятий" class="no-error">3 дня групповых
+                                занятий</label>
+                            <br>
+                            <input id="special_2" name="special_offer" type="radio"
+                                value="Одна персональная тренировка">
+                            <label for="special_2" title="Одна персональная тренировка" class="no-error">Одна
+                                персональная тренировка</label>
+                        </div>
+                        <button type="button" class="button"
+                            onclick="thanksPopup('c-block-1-popup-form', c_block_1_popup)">Получить специальное
+                            предложение
+                        </button>
+                    </form>
+                    <div class="c-block-8-licence">Нажимая на кнопку «Получить специальное <br> предложение» вы
+                        соглашаетесь с <a href="assets/files/Politika_konfidentsialnosti.docx">условиями передачи
+                            данных</a>
+                    </div>
+                </div>
+                <span id="c-block-1-close" class="c-block-1__download-popup-close">&times;</span>
+            </div>
+        </section>
+
+        <div style="overflow: hidden;">
+
+            <section id="yak2" class="c-block-2">
+                <div class="c-block-2__caption">Запишись на первое <br>
+                    <span style="font-style: italic; font-weight: bold; color: #fe99cd;">занятие в фитнес-студии</span>
+                </div>
+                <div class="c-block-2__phrase"><strong>Посмотри видео,</strong><br>как выглядит <br>студия изнутри</div>
+                <img src="assets/themes/base/img/backgrounds/weight.png" alt="weight" class="c-block-2__weight">
+                <section class="c-block-2__form">
+                    <div class="c-block-2__form-left">
+                        <img src="assets/themes/base/img/backgrounds/fitness.png" alt="fitness"
+                            class="c-block-2__form-left-fitness">
+                        <img src="assets/themes/base/img/backgrounds/arrow.png" alt="arrow"
+                            class="c-block-2__form-left-arrow">
+                        <img src="assets/themes/base/img/backgrounds/vimeo-bg.png" alt="vimeo-bg"
+                            class="c-block-2__form-left-vimeo-bg">
+                        <img src="assets/themes/base/img/backgrounds/play-button.png" alt="play-button"
+                            class="c-block-2__form-left-play-button" id="play-button">
+                    </div>
+                    <form action="mail.php" method="POST" class="c-block-2__form-block" id="c-block-2-form">
+                        <div id="checkboxes_wr_1" class="c-block-2__form-checkboxes_wrapper">
+                            <p class="c-block-2__form-title">В какое время вам удобнее заниматься?</p>
+                            <div class="c-block-2__form-checkboxes">
+                                <span class="c-block-2__form-checkboxes_btn1 active1">Утром</span>
+                                <span class="c-block-2__form-checkboxes_btn1">Днем</span>
+                                <span class="c-block-2__form-checkboxes_btn1">Вечером</span>
+                            </div>
+                        </div>
+                        <div id="checkboxes_wr_2" class="c-block-2__form-checkboxes_wrapper">
+                            <p class="c-block-2__form-title">Сколько раз в неделю планируете посещать зал?</p>
+                            <div class="c-block-2__form-checkboxes">
+                                <span class="c-block-2__form-checkboxes_btn2 active2">1</span>
+                                <span class="c-block-2__form-checkboxes_btn2">2</span>
+                                <span class="c-block-2__form-checkboxes_btn2">3</span>
+                                <span class="c-block-2__form-checkboxes_btn2">4</span>
+                                <span class="c-block-2__form-checkboxes_btn2">5</span>
+                            </div>
+                        </div>
+                        <label class="label">
+                            <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar" class="label-avatar">
+                            <input type="text" required name="user_name" class="field" placeholder="Введите ваше имя">
+                        </label>
+                        <label class="label">
+                            <img src="assets/themes/base/img/backgrounds/phone_pink.png" alt="phone_pink"
+                                class="label-phone_pink">
+                            <input type="tel" required name="user_phone" class="field phone_mask"
+                                placeholder="Введите ваш телефон">
+                        </label>
+                        <button class="button" type="button" onclick="thanksPopup('c-block-2-form', null)">
+                            Оставить заявку
+                        </button>
+                    </form>
+                </section>
+            </section>
+
+
+            <section class="c-block-3">
+                <img src="assets/themes/base/img/backgrounds/six.png" alt="six" class="c-block-3-six">
+                <div class="c-block-3__caption"><span>составляющих</span> <br>эффективных <br>тренировок</div>
+                <img src="assets/themes/base/img/backgrounds/c-block-3-woman.png" alt="woman" class="c-block-3-woman"
+                    width="600">
+                <img src="assets/themes/base/img/backgrounds/c-block-3-1.png" alt="components-1"
+                    class="c-block-3-components-1" width="330">
+                <img src="assets/themes/base/img/backgrounds/c-block-3-2.png" alt="components-2"
+                    class="c-block-3-components-2" width="330">
+            </section>
+
+
+            <!-- <section class="c-block-4">
+                <div class="c-block-4-wrapper">
+                    <img src="assets/themes/base/img/backgrounds/colibri-small-logo.png" alt="colibri-small-logo"
+                        class="c-block-4-wrapper-img">
+                    <div class="c-block-4-caption"><strong>О нас за 1 минуту</strong></div>
+                </div>
+                <img src="assets/themes/base/img/backgrounds/weight2.png" alt="weight2" class="c-block-4-weight"
+                    width="340">
+                <img src="assets/themes/base/img/backgrounds/blue_jacaranda.png" alt="blue_jacaranda"
+                    class="c-block-4-jacaranda">
+                <img src="assets/themes/base/img/backgrounds/video.png" alt="video" class="c-block-4-video">
+                <img src="assets/themes/base/img/backgrounds/video-mobile.png" alt="video-mobile"
+                    class="c-block-4-video-mobile">
+                <img src="assets/themes/base/img/backgrounds/play-button-2.png" alt="play-button-2"
+                    class="c-block-4-play-button" id="play-button2">
+                <div class="c-block-4-wrapper-play">
+                    <div class="c-block-4-wrapper-play-text"><span>Посмотри видео,</span><br>как выглядит студия изнутри
+                    </div>
+                    <img src="assets/themes/base/img/backgrounds/play-button.png" alt="play-button"
+                        class="c-block-4-wrapper-play-button" id="play-button2-mobile" height="100">
+                </div>
+            </section> -->
+
+
+            <section class="c-block-5">
+                <div class="c-block-5__caption">3 основные причины, почему <br><span
+                        style="font-style: italic; font-weight: bold;">девушки занимаются <br>в Colibri Fitness</span>
+                </div>
+                <img src="assets/themes/base/img/backgrounds/prichina01.png" alt="tri-prichini"
+                    class="c-block-5-tri-prichini" id="prichina01">
+                <img src="assets/themes/base/img/backgrounds/prichina02.png" alt="tri-prichini"
+                    class="c-block-5-tri-prichini" id="prichina02">
+                <img src="assets/themes/base/img/backgrounds/prichina03.png" alt="tri-prichini"
+                    class="c-block-5-tri-prichini" id="prichina03">
+
+                <div class="c-block-5-wrapper">
+                    <div class="c-block-5-wrapper-text" id="prichina01_text">
+                        <div class="c-block-5-title">Причина <span style="font-weight: bold; color: #fe99cd;">01</span>
+                        </div>
+                        <div class="c-block-5-text">Женское тело отличается от мужского и требует особенного подхода при
+                            физических нагрузках. <br><br>
+                            За 10 лет работы мы накопили знания, необходимые для максимально эффективных тренировок и
+                            готовы поделиться ими
+                        </div>
+                    </div>
+                    <div class="c-block-5-wrapper-text" id="prichina02_text">
+                        <div class="c-block-5-title">Причина <span style="font-weight: bold; color: #fe99cd;">02</span>
+                        </div>
+                        <div class="c-block-5-text">В Colibri Fitness царит женская и очень добродушная атмосфера.
+                            Девушки
+                            часто находят подруг в нашей студии и продолжают общаться за ее пределами. <br><br>
+                            Взаимная мотивация и поддержка как тренеров, так и их подопечных – это
+                            то, что вы не увидите в сетевых фитнес-клубах
+                        </div>
+                    </div>
+                    <div class="c-block-5-wrapper-text" id="prichina03_text">
+                        <div class="c-block-5-title">Причина <span style="font-weight: bold; color: #fe99cd;">03</span>
+                        </div>
+                        <div class="c-block-5-text">Уютная и спокойная обстановка фитнес-студии будет одним из ключевых
+                            факторов ваших продуктивных тренировок. <br><br>
+                            Шумные толпы и длинные очереди точно не будут вам мешать в нашей студии
+                        </div>
+                    </div>
+
+                    <div class="c-block-5-wrapper-slider">
+                        <div id="c-block-5-slider">
+                            <button class="c-block-5-control_next"><i class="fa fa-chevron-right"></i>
+                            </button>
+                            <button class="c-block-5-control_prev"><i class="fa fa-chevron-left"></i></button>
+                            <div style="overflow: hidden;">
+                                <ul>
+                                    <li id="c-block-5-slide1"></li>
+                                    <li id="c-block-5-slide2"></li>
+                                    <li id="c-block-5-slide3"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c-block-5-wrapper-mobile">
+                    <div class="c-block-5-wrapper-slider-mobile">
+                        <div id="c-block-5-slider-mobile">
+                            <img src="assets/themes/base/img/backgrounds/prichina1-mobile.png" alt="prichina1-mobile"
+                                id="prichina1-mobile" style="max-width: 300px; padding: 0 100px;">
+                            <img src="assets/themes/base/img/backgrounds/prichina2-mobile.png" alt="prichina2-mobile"
+                                id="prichina2-mobile" style="max-width: 300px; padding: 0 100px;">
+                            <img src="assets/themes/base/img/backgrounds/prichina3-mobile.png" alt="prichina3-mobile"
+                                id="prichina3-mobile" style="max-width: 300px; padding: 0 100px;">
+
+                            <button class="c-block-5-control_next-mobile"><i class="fa fa-chevron-right"></i>
+                            </button>
+                            <button class="c-block-5-control_prev-mobile"><i class="fa fa-chevron-left"></i></button>
+
+                            <div class="c-block-5-mobile-text" id="prichina01_text_mobile">
+                                <div class="c-block-5-title">Причина <span
+                                        style="font-weight: bold; color: #fe99cd;">01</span>
+                                </div>
+                                <div class="c-block-5-text">Женское тело отличается от мужского и требует особенного
+                                    подхода
+                                    при
+                                    физических нагрузках. <br><br>
+                                    За 10 лет работы мы накопили знания, необходимые для максимально эффективных
+                                    тренировок
+                                    и
+                                    готовы поделиться ими
+                                </div>
+                            </div>
+                            <div class="c-block-5-mobile-text" id="prichina02_text_mobile">
+                                <div class="c-block-5-title">Причина <span
+                                        style="font-weight: bold; color: #fe99cd;">02</span>
+                                </div>
+                                <div class="c-block-5-text">В Colibri Fitness царит женская и очень добродушная
+                                    атмосфера.
+                                    Девушки
+                                    часто находят подруг в нашей студии и продолжают общаться за ее пределами. <br><br>
+                                    Взаимная мотивация и поддержка как тренеров, так и их подопечных – это
+                                    то, что вы не увидите в сетевых фитнес-клубах
+                                </div>
+                            </div>
+                            <div class="c-block-5-mobile-text" id="prichina03_text_mobile">
+                                <div class="c-block-5-title">Причина <span
+                                        style="font-weight: bold; color: #fe99cd;">03</span>
+                                </div>
+                                <div class="c-block-5-text">Уютная и спокойная обстановка фитнес-студии будет одним из
+                                    ключевых
+                                    факторов ваших продуктивных тренировок. <br><br>
+                                    Шумные толпы и длинные очереди точно не будут вам мешать в нашей студии
+                                </div>
+                            </div>
+
+                            <img src="assets/themes/base/img/backgrounds/prichina1.png" alt="prichina1-mobile"
+                                class="c-block-5-img-mobile" id="prichina1-img-mobile" height="300">
+                            <img src="assets/themes/base/img/backgrounds/prichina2.png" alt="prichina2-mobile"
+                                class="c-block-5-img-mobile" id="prichina2-img-mobile" height="300">
+                            <img src="assets/themes/base/img/backgrounds/prichina3.png" alt="prichina3-mobile"
+                                class="c-block-5-img-mobile" id="prichina3-img-mobile" height="300">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="c-block-6">
+                <img src="assets/themes/base/img/backgrounds/phalaenopsis-orchid.png" alt="phalaenopsis-orchid"
+                    class="c-block-6-image" width="420">
+                <div class="c-block-2__caption c-block-6__caption">
+                    <span style="font-style: italic; font-weight: bold;">Фотографии студии</span>
+                </div>
+                <!-- <div class="c-block-6__text">Ты сможешь целый день тренироваться <br>в студии и посетить любые групповые
+                    занятия
+                </div> -->
+
+                <div class="c-block-6-wrapper">
+                    <div class="c-block-6-slider-wrapper">
+                        <div id="c-block-6-slider">
+                            <button class="c-block-6-control_next"><i class="fa fa-chevron-right"></i>
+                            </button>
+                            <button class="c-block-6-control_prev"><i class="fa fa-chevron-left"></i></button>
+                            <ul>
+                                <li id="c-block-6-slide1"></li>
+                                <li id="c-block-6-slide2"></li>
+                                <li id="c-block-6-slide3"></li>
+                                <li id="c-block-6-slide4"></li>
+                                <li id="c-block-6-slide5"></li>
+                                <li id="c-block-6-slide6"></li>
+                                <li id="c-block-6-slide7"></li>
+                                <li id="c-block-6-slide8"></li>
+                                <li id="c-block-6-slide9"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <form action="mail.php" method="POST" class="c-block-6__form-block" id="c-block-6-form">
+                        <p class="c-block-6__form-title">Оставьте свои данные <br>в форме ниже</p>
+                        <label class="label">
+                            <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar" class="label-avatar">
+                            <input type="text" required name="user_name" class="field" placeholder="Введите ваше имя">
+                        </label>
+                        <label class="label">
+                            <img src="assets/themes/base/img/backgrounds/phone_pink.png" alt="phone_pink"
+                                class="label-phone_pink">
+                            <input type="text" required name="user_phone" class="field phone_mask"
+                                placeholder="Введите ваш телефон">
+                        </label>
+                        <button class="button" type="button" onclick="thanksPopup('c-block-6-form', null)">Записаться на <br>гостевой визит
+                        </button>
+                    </form> -->
+                </div>
+
+            </section>
+
+
+            <section id="yak3" class="c-block-7">
+                <div class="c-block-7__caption"><span style="font-weight: bold;
+      font-style: italic;">Выбери</span> своего тренера
+                </div>
+                <img src="assets/themes/base/img/backgrounds/trophy-big.png" alt="trophy-big" class="c-block-7-trophy"
+                    width="250">
+                <img src="assets/themes/base/img/backgrounds/weight3.png" alt="weight3" class="c-block-7-weight3"
+                    width="150">
+
+                <div class="c-block-7-tabs">
+                    <input id="tab_1" type="radio" name="tabs" checked>
+                    <label for="tab_1" title="Жанна" id="label_tab_1">Жанна</label>
+
+                    <input id="tab_2" type="radio" name="tabs">
+                    <label for="tab_2" title="Людмила">Людмила</label>
+
+                    <input id="tab_3" type="radio" name="tabs">
+                    <label for="tab_3" title="Юлия" id="label_tab_3">Юлия</label>
+
+                    <section id="content1">
+                        <img src="assets/themes/base/img/backgrounds/zhanna-big.png" alt="zhanna-big"
+                            class="c-block-7-trener1" height="700">
+                        <div class="c-block-7-tabs-container">
+                            <img src="assets/themes/base/img/backgrounds/question.png" alt="question"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Основная информация</div>
+                            <div class="c-block-7-tabs-container-text">Тренерский стаж Жанны составляет более 20 лет
+                            </div>
+                            <img src="assets/themes/base/img/backgrounds/trophy.png" alt="trophy"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Достижения</div>
+                            <div class="c-block-7-tabs-container-text">Закончила московский областной педагогической
+                                институт
+                                имени Н.К.Крупской по специальности «Физическая культура» в 1991 году.
+                            </div>
+                            <img src="assets/themes/base/img/backgrounds/star.png" alt="star"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Интересные факты о тренере</div>
+                            <div class="c-block-7-tabs-container-text">Самый опытный тренер Colibri Fitness. В
+                                максимально
+                                короткие сроки добивается результатов со своими учениками
+                            </div>
+                            <button class="button c-block-7-button">Записаться на <br>тренировку</button>
+                        </div>
+                    </section>
+                    <section id="content2">
+                        <img src="assets/themes/base/img/backgrounds/ludmila-big.png" alt="ludmila-big"
+                            class="c-block-7-trener1" height="700">
+                        <div class="c-block-7-tabs-container">
+                            <img src="assets/themes/base/img/backgrounds/question.png" alt="question"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Основная информация</div>
+                            <div class="c-block-7-tabs-container-text">Людмила пошла по спортивной дорожке 20 лет назад,
+                                а 9
+                                лет
+                                назад провела первые групповые тренировки
+                                в качестве преподавателя
+                            </div>
+                            <img src="assets/themes/base/img/backgrounds/trophy.png" alt="trophy"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Достижения</div>
+                            <div class="c-block-7-tabs-container-text">Постоянно обучается и проходит курсы повышения
+                                квалификации
+                            </div>
+                            <img src="assets/themes/base/img/backgrounds/star.png" alt="star"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Интересные факты о тренере</div>
+                            <div class="c-block-7-tabs-container-text">Командный голос Людмилы заставит ваше тело прийти
+                                в форму уже после нескольких тренировок
+                            </div>
+                            <button class="button c-block-7-button">Записаться на <br>тренировку</button>
+                        </div>
+                    </section>
+                    <section id="content3">
+                        <img src="assets/themes/base/img/backgrounds/yulia-big.png" alt="yulia-big"
+                            class="c-block-7-trener1" height="700">
+                        <div class="c-block-7-tabs-container">
+                            <img src="assets/themes/base/img/backgrounds/question.png" alt="question"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Основная информация</div>
+                            <div class="c-block-7-tabs-container-text">Юлия профессионально тренерует девушек уже 3
+                                года, а
+                                сама
+                                занимается на протяжении 7 лет
+                            </div>
+                            <img src="assets/themes/base/img/backgrounds/trophy.png" alt="trophy"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Достижения</div>
+                            <div class="c-block-7-tabs-container-text">Вице-чемпионка Москвы и России по пауэрлифтингу
+                            </div>
+                            <img src="assets/themes/base/img/backgrounds/star.png" alt="star"
+                                class="c-block-7-tabs-container-icon">
+                            <div class="c-block-7-tabs-container-caption">Интересные факты о тренере</div>
+                            <div class="c-block-7-tabs-container-text">Является сертифицированным нутрициологом,
+                                профессионально
+                                составляет рацион для своих подопечных
+                            </div>
+                            <button class="button c-block-7-button">Записаться на <br>тренировку</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="c-block-7-popup" class="c-block-7__popup">
+                    <div class="c-block-7-popup-wrapper">
+                        <img src="assets/themes/base/img/c-block-1-logo.png" alt="logo"
+                            style="display: block; margin: 0 auto; padding: 15px 0;" height="70">
+                        <form action="mail.php" method="POST" class="c-block-8__form-block" id="c-block-7-form">
+                            <label class="label">
+                                <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar"
+                                    class="label-avatar">
+                                <input type="text" required name="user_name" class="field"
+                                    placeholder="Введите ваше имя">
+                            </label>
+                            <label class="label">
+                                <img src="assets/themes/base/img/backgrounds/phone_pink.png" alt="phone_pink"
+                                    class="label-phone_pink">
+                                <input type="tel" required name="user_phone" class="field phone_mask"
+                                    placeholder="Введите ваш телефон">
+                            </label>
+                            <button type="button" class="button"
+                                onclick="thanksPopup('c-block-7-form', c_block_7_popup)">
+                                ЗАПИСАТЬСЯ НА ТРЕНИРОВКУ
+                            </button>
+                        </form>
+                        <div class="c-block-8-licence">Нажимая на кнопку «Записаться на тренировку» <br>вы соглашаетесь
+                            с <a href="assets/files/Politika_konfidentsialnosti.docx">условиями передачи данных</a>
+                        </div>
+                    </div>
+                    <span id="c-block-7-close" class="c-block-7__popup-close">&times;</span>
+                </div>
+            </section>
+
+
+            <section class="c-block-8">
+                <img src="assets/themes/base/img/backgrounds/fitness-small.png" alt="fitness-small"
+                    class="c-block-8-fitness" height="280">
+                <div class="c-block-8-wrapper">
+                    <div class="c-block-8-caption">Тренировки начинаются <br><span
+                            style="font-style: italic; font-weight: bold; color: #fe99cd;">с правильного питания</span>
+                    </div>
+                    <div class="c-block-8-text">Скачай рецепты приготовления полезных <br>блюд и начни питаться
+                        правильно
+                        уже
+                        <br>
+                        сегодня
+                    </div>
+                    <img src="assets/themes/base/img/backgrounds/c-block-8-mobile.png" alt="brochure-a4-mockup"
+                        class="c-block-8-brochure-mobile" height="430">
+                    <button id="recipes-download" type="button" class="button">СКАЧАТЬ</button>
+                </div>
+                <img src="assets/themes/base/img/backgrounds/c-block-8.png" alt="brochure-a4-mockup"
+                    class="c-block-8-brochure" height="400">
+
+                <div id="c-block-8-bg_layer" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+background: black; opacity: 0.5; z-index:99;"></div>
+                <div id="recipes-popup" class="c-block-8__recipes-popup">
+                    <img src="assets/themes/base/img/backgrounds/recipes.png" alt="recipes" class="c-block-8-recipes"
+                        height="410">
+                    <div class="c-block-8-wrapper" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                        <img src="assets/themes/base/img/c-block-1-logo.png" alt="logo" class="c-block-8-logo"
+                            height="70">
+                        <form action="mail_recipes.php" method="POST" class="c-block-8__form-block" id="c-block-8-form">
+                            <label class="label">
+                                <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar"
+                                    class="label-avatar">
+                                <input type="text" name="user_name" class="field" placeholder="Введите ваше имя"
+                                    required>
+                            </label>
+                            <label class="label">
+                                <img src="assets/themes/base/img/backgrounds/phone_pink.png" alt="phone_pink"
+                                    class="label-phone_pink">
+                                <input type="tel" name="user_phone" class="field phone_mask"
+                                    placeholder="Введите ваш телефон" required>
+                            </label>
+                            <button type="button" class="button" onclick="thanksPopup('c-block-8-form', recipes_popup)">
+                                СКАЧАТЬ РЕЦЕПТЫ
+                            </button>
+                        </form>
+                        <iframe name='formresponse' title="formresponse" style='display: none;'></iframe>
+
+                        <div class="c-block-8-licence">Нажимая на кнопку «Скачать рецепты» <br>вы соглашаетесь с <a
+                                href="assets/files/Politika_konfidentsialnosti.docx">условиями передачи данных</a>
+                        </div>
+                    </div>
+                    <span class="c-block-8__recipes-popup-close">&times;</span>
+                </div>
+            </section>
+
+
+            <section class="c-block-9">
+                <div class="c-block-9-caption"><span style="font-weight: bold;
+      font-style: italic;">Собери</span> индивидуальную <br>клубную карту
+                </div>
+                <div class="c-block-9-text">Ответь на 5 вопросов и получи <br><span
+                        style="font-style: italic; font-weight: bolder; color: #b12c71;">15% скидку </span>на свой
+                    первый абонемент</div>
+                <img src="assets/themes/base/img/backgrounds/carpet.png" alt="carpet" class="c-block-9-carpet1">
+                <img src="assets/themes/base/img/backgrounds/carpet2.png" alt="carpet" class="c-block-9-carpet2">
+                <img src="assets/themes/base/img/backgrounds/fitness-ball.png" alt="fitness-ball"
+                    class="c-block-9-fitness-ball" width="250">
+
+                <div class="page-wrapper">
+                    <div class="wrapper wrapper--w900">
+                        <div class="card card-1">
+                            <img src="assets/themes/base/img/backgrounds/woman.png" alt="woman" class="card-1-woman"
+                                height="580">
+                            <div class="card-body">
+                                <form action="mail_quiz_main.php" method="POST" id="js-wizard-form"
+                                    class="c-block-9-form">
+                                    <div class="wizard-container" id="js-wizard-form-block">
+                                        <div class="progress" id="js-progress">
+                                            <div class="progress-bar" id="progress-bar" role="progressbar"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 0;">
+                                                <span class="progress-val" id="progress-val">0%</span>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="tab1">
+                                                <div class="tab-pane-question-no">Вопрос 1 из 5</div>
+                                                <div class="tab-pane-caption">Занимались ли вы раньше <br>в
+                                                    фитнес-клубах?
+                                                </div>
+                                                <div
+                                                    style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                                                    <input id="question_1_1" name="question_tabs_1" type="radio"
+                                                        value="Да, сейчас занимаюсь" checked>
+                                                    <label for="question_1_1" title="Да, сейчас занимаюсь">Да, сейчас
+                                                        занимаюсь</label>
+                                                    <input id="question_1_2" name="question_tabs_1" type="radio"
+                                                        value="Да, было дело">
+                                                    <label for="question_1_2" title="Да, было дело">Да, было
+                                                        дело</label>
+                                                    <input id="question_1_3" name="question_tabs_1" type="radio"
+                                                        value="Нет, не занималась">
+                                                    <label for="question_1_3" title="Нет, не занималась">Нет, не
+                                                        занималась</label>
+                                                </div>
+                                                <div class="btn-next-con">
+                                                    <button class="btn-next button" type="button">Далее</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab2">
+                                                <div class="tab-pane-question-no">Вопрос 2 из 5</div>
+                                                <div class="tab-pane-caption">Сколько раз в неделю вы планируете
+                                                    <br>посещать
+                                                    фитнес-студию?
+                                                </div>
+                                                <div style="display: flex; flex-wrap: wrap;">
+                                                    <input id="question_2_1" name="question_tabs_2" type="radio"
+                                                        value="1" checked>
+                                                    <label for="question_2_1" title="1">1</label>
+                                                    <input id="question_2_2" name="question_tabs_2" type="radio"
+                                                        value="2">
+                                                    <label for="question_2_2" title="2">2</label>
+                                                    <input id="question_2_3" name="question_tabs_2" type="radio"
+                                                        value="3">
+                                                    <label for="question_2_3" title="3">3</label>
+                                                    <input id="question_2_4" name="question_tabs_2" type="radio"
+                                                        value="4">
+                                                    <label for="question_2_4" title="4">4</label>
+                                                </div>
+                                                <div class="btn-next-con">
+                                                    <!--<button class="btn-back button" type="button">Назад</button>-->
+                                                    <button class="btn-next button" type="button">Далее</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab3">
+                                                <div class="tab-pane-question-no">Вопрос 3 из 5</div>
+                                                <div class="tab-pane-caption">В какое время вам удобнее <br>заниматься?
+                                                </div>
+                                                <div style="display: flex; flex-wrap: wrap;">
+                                                    <input id="question_3_1" name="question_tabs_3" type="radio"
+                                                        value="Утром" checked>
+                                                    <label for="question_3_1" title="Утром">Утром</label>
+                                                    <input id="question_3_2" name="question_tabs_3" type="radio"
+                                                        value="Днем">
+                                                    <label for="question_3_2" title="Днем">Днем</label>
+                                                    <input id="question_3_3" name="question_tabs_3" type="radio"
+                                                        value="Вечером">
+                                                    <label for="question_3_3" title="Вечером">Вечером</label>
+                                                    <input id="question_3_4" name="question_tabs_3" type="radio"
+                                                        value="В разное">
+                                                    <label for="question_3_4" title="В разное">В разное</label>
+                                                </div>
+                                                <div class="btn-next-con">
+                                                    <!--<button class="btn-back button" type="button">Назад</button>-->
+                                                    <button class="btn-next button" type="button">Далее</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab4">
+                                                <div class="tab-pane-question-no">Вопрос 4 из 5</div>
+                                                <div class="tab-pane-caption">Что вам наиболее интересно? <br></div>
+                                                <div style="display: flex; flex-wrap: wrap;">
+                                                    <input id="question_4_1" name="question_tabs_4" type="radio"
+                                                        value="Тренажёрный зал" checked>
+                                                    <label for="question_4_1" title="Тренажёрный зал">Тренажёрный
+                                                        зал</label>
+                                                    <input id="question_4_2" name="question_tabs_4" type="radio"
+                                                        value="Групповые занятия">
+                                                    <label for="question_4_2" title="Групповые занятия">Групповые
+                                                        занятия</label>
+                                                    <input id="question_4_3" name="question_tabs_4" type="radio"
+                                                        value="Всё вместе">
+                                                    <label for="question_4_3" title="Всё вместе">Всё вместе</label>
+                                                </div>
+                                                <div class="btn-next-con">
+                                                    <!--<button class="btn-back button" type="button">Назад</button>-->
+                                                    <button class="btn-next button" type="button">Далее</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab5">
+                                                <div class="tab-pane-question-no">Вопрос 5 из 5</div>
+                                                <div class="tab-pane-caption">Как бы вы хотели тренироваться?</div>
+                                                <div style="display: flex; flex-wrap: wrap;">
+                                                    <input id="question_5_1" name="question_tabs_5" type="radio"
+                                                        value="Самостоятельно" checked>
+                                                    <label for="question_5_1"
+                                                        title="Самостоятельно">Самостоятельно</label>
+                                                    <input id="question_5_2" name="question_tabs_5" type="radio"
+                                                        value="С тренером">
+                                                    <label for="question_5_2" title="С тренером">С тренером</label>
+                                                    <input id="question_5_3" name="question_tabs_5" type="radio"
+                                                        value="Пока не решила">
+                                                    <label for="question_5_3" title="Пока не решила">Пока не
+                                                        решила</label>
+                                                </div>
+                                                <div class="btn-next-con">
+                                                    <!--<button class="btn-back button" type="button">Назад</button>-->
+                                                    <button class="btn-next button" type="button">Далее</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab6">
+                                                <div class="tab-pane-caption last" style="padding-bottom: 40px;">Оставь
+                                                    свой номер телефона и мы <span
+                                                        style="font-style: italic; font-weight: bold; color: #fe99cd;">сохраним
+                                                        за вами скидку </span>на первый абонемент
+                                                </div>
+                                                <div style="display: flex; flex-wrap: wrap;">
+                                                    <label class="label">
+                                                        <img src="assets/themes/base/img/backgrounds/phone_pink.png"
+                                                            alt="phone_pink" class="label-phone_pink">
+                                                        <input type="tel" name="user_phone_guest"
+                                                            class="field phone_mask" placeholder="Введите ваш телефон"
+                                                            required>
+                                                    </label>
+                                                </div>
+                                                <div class="btn-next-con">
+                                                    <!--<button class="btn-back button" type="button">Назад</button>-->
+                                                    <button class="btn-last button" type="button"
+                                                        onclick="thanksPopup('js-wizard-form', null, 2)">ПОЛУЧИТЬ СКИДКУ
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="c-block-10">
+                <div class="c-block-10-caption"><span
+                        style="font-style: italic; font-weight: bold; color: #fe99cd;">Девушки переходят</span>
+                    к нам<br>из сетевых фитнес-клубов
+                </div>
+                <div class="c-block-10-text">Узнай, почему</div>
+
+                <div class="c-block-10-tabs">
+                    <section id="c-block-10-content1">
+                        <img src="assets/themes/base/img/backgrounds/feedback1.png" alt="feedback1"
+                            class="c-block-10-feedback">
+                        <img src="assets/themes/base/img/backgrounds/feedback1-mobile.png" alt="feedback1"
+                            class="c-block-10-feedback-mobile">
+                    </section>
+                    <section id="c-block-10-content2">
+                        <img src="assets/themes/base/img/backgrounds/feedback2.png" alt="feedback2"
+                            class="c-block-10-feedback">
+                        <img src="assets/themes/base/img/backgrounds/feedback2-mobile.png" alt="feedback2"
+                            class="c-block-10-feedback-mobile">
+                    </section>
+                    <section id="c-block-10-content3">
+                        <img src="assets/themes/base/img/backgrounds/feedback3.png" alt="feedback3"
+                            class="c-block-10-feedback">
+                        <img src="assets/themes/base/img/backgrounds/feedback3-mobile.png" alt="feedback3"
+                            class="c-block-10-feedback-mobile">
+                    </section>
+
+                    <div id="c-block-10-wrapper" class="c-block-10-wrapper">
+                        <img src="assets/themes/base/img/backgrounds/phalaenopsis-orchid-2.png"
+                            alt="phalaenopsis-orchid-2" class="c-block-10-phalaenopsis-orchid-2">
+
+                        <input id="c-block-10-tab_1" type="radio" name="c-block-10-tabs" checked>
+                        <label for="c-block-10-tab_1" title="Отзыв Софии">Отзыв Софии</label>
+
+                        <input id="c-block-10-tab_2" type="radio" name="c-block-10-tabs">
+                        <label for="c-block-10-tab_2" title="Отзыв Любови">Отзыв Любови</label>
+
+                        <input id="c-block-10-tab_3" type="radio" name="c-block-10-tabs">
+                        <label for="c-block-10-tab_3" title="Отзыв Вероники">Отзыв Вероники</label>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- <section id="yak4" class="c-block-11">
+                <div class="c-block-11-caption">
+                    <span style="font-style: italic; font-weight: bold; color: rgb(254, 153, 205);">
+                        Скачайте полное</span><br>описание и цены <br>программ
+                </div>
+                <img src="assets/themes/base/img/backgrounds/journal-2-mobile.png" alt="journal-2"
+                    class="c-block-11-journal-mobile">
+                <form action="mail_prices.php" method="POST" class="c-block-11__form-block" id="c-block-11-form">
+                    <label class="label">
+                        <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar" class="label-avatar">
+                        <input type="text" required name="user_name" class="field" placeholder="Введите ваше имя">
+                    </label>
+                    <label class="label">
+                        <img src="assets/themes/base/img/backgrounds/phone_pink.png" alt="phone_pink"
+                            class="label-phone_pink">
+                        <input type="tel" required name="user_phone" class="field phone_mask"
+                            placeholder="Введите ваш телефон">
+                    </label>
+                    <button class="button" type="button" onclick="thanksPopup('c-block-11-form', null)">
+                        СКАЧАТЬ ОПИСАНИЕ И ЦЕНЫ
+                    </button>
+                </form>
+                <img src="assets/themes/base/img/backgrounds/journal-2.png" alt="journal-2" class="c-block-11-journal">
+            </section> -->
+
+
+            <section id="yak5" class="c-block-12">
+                <div class="c-block-12-caption">Контактные данные</div>
+                <div class="c-block-12-wrapper">
+                    <div class="c-block-12-wrapper-map1">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3491ca12fb89678d60a81734accbef772beeaf6a3cef5ad6368ae14fa0f58cfe&amp;width=478&amp;height=420&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <div class="c-block-12-wrapper-map2">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3491ca12fb89678d60a81734accbef772beeaf6a3cef5ad6368ae14fa0f58cfe&amp;width=320&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <div class="c-block-12-social-wrapper">
+                        <div class="c-block-12-social-text">Следи за нами <br>в социальных <br>сетях</div>
+                        <img src="assets/themes/base/img/backgrounds/social.png" alt="social" class="c-block-12-social">
+                        <div class="c-block-12-social-wrapper-a">
+                            <a href="https://www.instagram.com/colibri.fitness/" target="_blank">Instagram<br></a>
+                            <a href="https://vk.com/colibrifitgroup" target="_blank">Вконтакте</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-phone-wrapper">
+                <img src="assets/themes/base/img/backgrounds/phone-icon.png" alt="phone-icon" class="footer-phone-icon">
+                <a href="tel:84951202282" class="footer-phone">+7 (495) 120-22-82</a>
+            </div>
+            <div class="footer-mail"><span>ПОЧТА</span><br>
+                <a href="mailto:colibri-fitness@yandex.ru">colibri-fitness@yandex.ru</a></div>
+            <div class="footer-address"><span>АДРЕС</span><br> Протопоповский переулок, д. 40</div>
+            <div class="footer-social">
+                <div class="footer-social-icons">
+                    <a href="https://vk.com/colibrifitgroup" target="_blank"><img
+                            src="assets/themes/base/img/backgrounds/vk-icon.png" alt="vk-icon"
+                            class="footer-social-icons-item"></a>
+                    <a href="https://www.facebook.com/colibri.fitness.msk/" target="_blank"><img
+                            src="assets/themes/base/img/backgrounds/facebook-icon.png" alt="facebook-icon"
+                            class="footer-social-icons-item"></a>
+                    <a href="https://www.instagram.com/colibri.fitness/" target="_blank"><img
+                            src="assets/themes/base/img/backgrounds/instagram-icon.png" alt="instagram-icon"
+                            class="footer-social-icons-item"></a>
+                </div>
+                <div class="footer-social-links">
+                    <a href="assets/files/Politika_konfidentsialnosti.docx" class="footer-social-links-item">Политика
+                        конфиденциальности<br></a>
+                    <a href="assets/files/Prilozhenie_k_dogovoru.docx" class="footer-social-links-item">Правила
+                        внутреннего
+                        распорядка<br></a>
+                    <a href="assets/files/Dogovor_kluba.docx" class="footer-social-links-item">Клиентский договор</a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="thanks_popup" class="thanks_popup">
+            <div class="thanks_popup-wrapper">
+                <img src="assets/themes/base/img/c-block-1-logo.png" alt="logo"
+                    style="display: block; margin: 0 auto; padding: 15px 0;" height="70">
+                <div class="thanks_popup-text">Спасибо за заявку. Администратор фитнес-студии свяжется с вами в
+                    ближайшее
+                    время
+                </div>
+            </div>
+            <span id="thanks_popup-close" class="thanks_popup-close">&times;</span>
+        </div>
+    </div>
+
+    <div id="bg_layer" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+background: black; opacity: 0.5; z-index:99;"></div>
+
+    <div id="vimeo-block">
+        <iframe src="https://player.vimeo.com/video/315128195?byline=0&portrait=0" frameborder="0" webkitallowfullscreen
+            mozallowfullscreen allowfullscreen id="vimeo-iframe" title="vimeo_iframe"></iframe>
+        <span class="close">&times;</span>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(54507883, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/54507883" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
