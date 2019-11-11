@@ -1109,7 +1109,7 @@ body,
 
 @media screen and (max-width: 500px) {
   .layout .c-block-1__download-popup-caption {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -2372,7 +2372,8 @@ body,
 
 @media screen and (max-width: 500px) {
   .layout .c-block-8__form-block .button {
-    width: 300px;
+    width: 280px;
+    height: 70px;
   }
 }
 
@@ -2384,6 +2385,12 @@ body,
   color: #a0a0a0;
   line-height: 1.538;
   word-break: break-word;
+}
+
+@media screen and (max-width: 500px) {
+  .layout .c-block-8-licence {
+    font-size: 11px;
+  }
 }
 
 .layout .c-block-8-licence a {
