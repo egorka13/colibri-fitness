@@ -175,6 +175,13 @@
   left: 5px;
 }
 
+.c-block-7-tabs label[for*="4"]:before {
+  content: url(../img/backgrounds/stella.png);
+  position: absolute;
+  bottom: -6px;
+  left: 5px;
+}
+
 /* изменения стиля заголовков вкладок при наведении */
 .c-block-7-tabs label:hover {
   cursor: pointer;
@@ -192,7 +199,8 @@
 /* активация секций с помощью переключателя :checked */
 #tab_1:checked ~ #content1,
 #tab_2:checked ~ #content2,
-#tab_3:checked ~ #content3 {
+#tab_3:checked ~ #content3,
+#tab_4:checked ~ #content4 {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
