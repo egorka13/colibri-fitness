@@ -1,7 +1,11 @@
 .layout {
   & .c-block-promotion {
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
+
+    @media screen and (min-width: 450px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     &__left {
       display: flex;
@@ -2198,6 +2202,74 @@
         text-decoration: none;
         cursor: pointer;
       }
+    }
+  }
+
+  & .marathon-popup {
+    display: none;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999;
+
+    border-radius: 5px;
+    // background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 49px 0 rgba(217, 217, 217, 0.21);
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-caption {
+      width: 100%;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+
+      font-size: 32px;
+      font-family: "MuseoCyrl";
+      font-weight: 900;
+      color: rgb(255, 254, 254);
+      line-height: 1.278;
+      text-shadow: 0px 2px 73.6px rgba(56, 60, 67, 0.67);
+    }
+
+    &-close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+
+      color: white;
+      font-size: 50px;
+      z-index: 9999;
+
+      @media screen and (max-width: 500px) {
+        font-size: 43px;
+      }
+
+      &:hover {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    .button {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 275px;
+      border: 0;
+      color: white;
+      text-shadow: none;
+      letter-spacing: 2.2px;
+      background-image: linear-gradient(90deg, #bb09e4 0%, #d26ae9 100%);
     }
   }
 
