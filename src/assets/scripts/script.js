@@ -582,7 +582,7 @@ let marathon_popup = document.getElementById('marathon-popup'),
     marathon_popup_close = document.getElementById('marathon-popup-close');
 
 window.onload = function () {
-    if (sessionStorage.getItem("marathon") !== "viewed" && $(window).width() < 450) {
+    if (localStorage.getItem("marathon") !== "viewed" && $(window).width() < 450) {
         marathon_popup.style.display = "block";
         c_block_1_bg_layer.style.display = "block";
         clearInterval(refreshIntervalId);
@@ -590,7 +590,7 @@ window.onload = function () {
 };
 
 marathon_popup_close.onclick = function () {
-    sessionStorage.setItem("marathon", "viewed");
+    localStorage.setItem("marathon", "viewed");
     marathon_popup.style.display = "none";
     c_block_1_bg_layer.style.display = "none";
     refreshIntervalId = customSetInterval();
@@ -598,7 +598,7 @@ marathon_popup_close.onclick = function () {
 
 function onMarathonButtonClick() {
     marathon_popup_tel.click();
-    sessionStorage.setItem("marathon", "viewed");
+    localStorage.setItem("marathon", "viewed");
     marathon_popup.style.display = "none";
     c_block_1_bg_layer.style.display = "none";
     refreshIntervalId = customSetInterval();
