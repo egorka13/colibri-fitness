@@ -16,12 +16,12 @@
     <link href="assets/themes/base/styles/wizard.css" media="all" rel="stylesheet">
     
     <!-- Jquery JS -->
-	<script src="assets/scripts/jquery/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/scripts/jquery.maskedinput.min.js"></script>
     
     <!-- Vendor JS-->
 	<script src="assets/scripts/jquery-validate/jquery.validate.min.js"></script>
-	<script async src="assets/scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -120,7 +120,7 @@
                 Только девушки<br>и никаких мужчин
             </div>
 			<button class="c-block-1__body-button" id="c-block-1-button" type="button">Персональная тренировка за 790 руб. 
-                <img alt="pink-rose" src="assets/themes/base/img/backgrounds/c-block-1-pink-rose.png"></button>
+                <img alt="pink-rose" data-src="assets/themes/base/img/backgrounds/c-block-1-pink-rose.png" class="lazyload"></button>
 
 			<div class="c-block-1__body-scroll">
 				<div class="c-block-1__body-scroll-icon"><img alt="mouse" src="assets/themes/base/img/backgrounds/mouse.png">
@@ -133,17 +133,17 @@
 
             <div class="c-block-1__body-timetable"><span>Посмотреть<br>расписание<br>групповых программ<br></span>
                 <a class="c-block-1__body-timetable-link" href="assets/files/timetable.jpg" target="_blank">Открыть<br>
-                    расписание</a> <img alt="journal" class="c-block-1__body-timetable-journal1"
-                    src="assets/themes/base/img/backgrounds/journal.png"> <img alt="journal"
-                    class="c-block-1__body-timetable-journal2" src="assets/themes/base/img/backgrounds/journal-mobile.png"></div>
-            <img alt="Девушка" class="c-block-1__body-woman" src="assets/themes/base/img/backgrounds/c-block-1-woman.png">
+                    расписание</a> <img alt="journal" class="c-block-1__body-timetable-journal1 lazyload"
+                    data-src="assets/themes/base/img/backgrounds/journal.png"> <img alt="journal"
+                    class="c-block-1__body-timetable-journal2 lazyload" data-src="assets/themes/base/img/backgrounds/journal-mobile.png"></div>
+            <img alt="Девушка" class="c-block-1__body-woman lazyload" data-src="assets/themes/base/img/backgrounds/c-block-1-woman.png">
             </div>
 
 			<div id="c-block-1-bg_layer" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: black; opacity: 0.5; z-index: 999;">
 			</div>
 
 			<div class="c-block-1__location-popup" id="location-popup">
-				<span class="close">&times;</span> <img alt="location-icon" class="c-block-1__location-popup-icon" height="25" src="assets/themes/base/img/backgrounds/location-mobile.png">
+				<span class="close">&times;</span> <img alt="location-icon" class="c-block-1__location-popup-icon lazyload" height="25" data-src="assets/themes/base/img/backgrounds/location-mobile.png">
 
 				<div class="c-block-1__location-popup-address">
 					<strong style="color: rgb(254, 229, 153);">7 минут</strong> от метро<br>Проспект Мира<br>
@@ -154,7 +154,7 @@
 
 
 			<div class="c-block-1__phone-popup" id="phone-popup">
-				<span class="close">&times;</span> <img alt="location-icon" class="c-block-1__phone-popup-icon" height="25" src="assets/themes/base/img/backgrounds/phone-mobile.png">
+				<span class="close">&times;</span> <img alt="location-icon" class="c-block-1__phone-popup-icon lazyload" height="25" data-src="assets/themes/base/img/backgrounds/phone-mobile.png">
 
 				<div class="c-block-1__phone-popup-phone">
 					<a class="c-block-1__phone-popup-phone-link" href="tel:84951202282">+7 (495) 120-22-82</a>
@@ -170,7 +170,7 @@
 
 			<div class="c-block-1__download-popup" id="c-block-1-popup">
 				<div class="c-block-1-popup-wrapper" style="width: min-content;">
-					<img alt="logo" height="70" src="assets/themes/base/img/c-block-1-logo.png" style="display: block; margin: 0 auto; padding: 15px 0;">
+					<img alt="logo" height="70" data-src="assets/themes/base/img/c-block-1-logo.png" class="lazyload" style="display: block; margin: 0 auto; padding: 15px 0;">
 
 					<div class="c-block-1__download-popup-caption">
 						Выбери специальное предложение<br>
@@ -216,14 +216,14 @@
 				<div class="c-block-2__phrase">
 					<strong>Посмотри видео,</strong><br>как выглядит<br>студия изнутри
 				</div>
-				<img alt="weight" class="c-block-2__weight" src="assets/themes/base/img/backgrounds/weight.png">
+				<img alt="weight" class="c-block-2__weight lazyload" data-src="assets/themes/base/img/backgrounds/weight.png">
 
 				<section class="c-block-2__form">
                     <div class="c-block-2__form-left">
-                        <img alt="fitness" class="c-block-2__form-left-fitness" src="assets/themes/base/img/backgrounds/fitness.png"> 
-                        <img alt="arrow" class="c-block-2__form-left-arrow" src="assets/themes/base/img/backgrounds/arrow.png"> 
-                        <img alt="vimeo-bg" class="c-block-2__form-left-vimeo-bg" src="assets/themes/base/img/backgrounds/vimeo-bg.png"> 
-                        <img alt="play-button" class="c-block-2__form-left-play-button" id="play-button" src="assets/themes/base/img/backgrounds/play-button.png">
+                        <img alt="fitness" class="c-block-2__form-left-fitness lazyload" data-src="assets/themes/base/img/backgrounds/fitness.png"> 
+                        <img alt="arrow" class="c-block-2__form-left-arrow lazyload" data-src="assets/themes/base/img/backgrounds/arrow.png"> 
+                        <img alt="vimeo-bg" class="c-block-2__form-left-vimeo-bg lazyload" data-src="assets/themes/base/img/backgrounds/vimeo-bg.png"> 
+                        <img alt="play-button" class="c-block-2__form-left-play-button lazyload" id="play-button" data-src="assets/themes/base/img/backgrounds/play-button.png">
                     </div>
 
 					<form action="mail.php" class="c-block-2__form-block" id="c-block-2-form" method="post" name="c-block-2-form">
@@ -250,9 +250,9 @@
                                 <span class="c-block-2__form-checkboxes_btn2">5</span>
 							</div>
 						</div>
-                        <label class="label"><img alt="avatar" class="label-avatar" src="assets/themes/base/img/backgrounds/avatar.png"> 
+                        <label class="label"><img alt="avatar" class="label-avatar lazyload" data-src="assets/themes/base/img/backgrounds/avatar.png"> 
                             <input class="field" name="user_name" placeholder="Введите ваше имя" required="" type="text"></label> 
-                            <label class="label"><img alt="phone_pink" class="label-phone_pink" src="assets/themes/base/img/backgrounds/phone_pink.png"> 
+                            <label class="label"><img alt="phone_pink" class="label-phone_pink lazyload" data-src="assets/themes/base/img/backgrounds/phone_pink.png"> 
                                 <input class="field phone_mask" name="user_phone" placeholder="Введите ваш телефон" required="" type="tel"></label> 
                                 <button class="button" onclick="thanksPopup('c-block-2-form', null)" type="button">Оставить заявку</button>
 					</form>
@@ -261,14 +261,14 @@
 
 
 			<section class="c-block-3">
-				<img alt="six" class="c-block-3-six" src="assets/themes/base/img/backgrounds/six.png">
+				<img alt="six" class="c-block-3-six lazyload" data-src="assets/themes/base/img/backgrounds/six.png">
 
 				<div class="c-block-3__caption">
                     <span>составляющих</span><br>эффективных<br>тренировок
                 </div>
-                <img alt="woman" class="c-block-3-woman" src="assets/themes/base/img/backgrounds/c-block-3-woman.png" width="600"> 
-                <img alt="components-1" class="c-block-3-components-1" src="assets/themes/base/img/backgrounds/c-block-3-1.png" width="330"> 
-                <img alt="components-2" class="c-block-3-components-2" src="assets/themes/base/img/backgrounds/c-block-3-2.png" width="330">
+                <img alt="woman" class="c-block-3-woman lazyload" data-src="assets/themes/base/img/backgrounds/c-block-3-woman.png" width="600"> 
+                <img alt="components-1" class="c-block-3-components-1 lazyload" data-src="assets/themes/base/img/backgrounds/c-block-3-1.png" width="330"> 
+                <img alt="components-2" class="c-block-3-components-2 lazyload" data-src="assets/themes/base/img/backgrounds/c-block-3-2.png" width="330">
 			</section>
 			<!-- <section class="c-block-4">
                 <div class="c-block-4-wrapper">
@@ -298,9 +298,9 @@
 				<div class="c-block-5__caption">
 					3 основные причины, почему<br><span style="font-style: italic; font-weight: bold;">девушки занимаются<br>в Colibri Fitness</span>
 				</div>
-                <img alt="tri-prichini" class="c-block-5-tri-prichini" id="prichina01" src="assets/themes/base/img/backgrounds/prichina01.png"> 
-                <img alt="tri-prichini" class="c-block-5-tri-prichini" id="prichina02" src="assets/themes/base/img/backgrounds/prichina02.png"> 
-                <img alt="tri-prichini" class="c-block-5-tri-prichini" id="prichina03" src="assets/themes/base/img/backgrounds/prichina03.png">
+                <img alt="tri-prichini" class="c-block-5-tri-prichini lazyload" id="prichina01" data-src="assets/themes/base/img/backgrounds/prichina01.png"> 
+                <img alt="tri-prichini" class="c-block-5-tri-prichini lazyload" id="prichina02" data-src="assets/themes/base/img/backgrounds/prichina02.png"> 
+                <img alt="tri-prichini" class="c-block-5-tri-prichini lazyload" id="prichina03" data-src="assets/themes/base/img/backgrounds/prichina03.png">
 
 				<div class="c-block-5-wrapper">
 					<div class="c-block-5-wrapper-text" id="prichina01_text">
@@ -360,9 +360,9 @@
 				<div class="c-block-5-wrapper-mobile">
 					<div class="c-block-5-wrapper-slider-mobile">
 						<div id="c-block-5-slider-mobile">
-                            <img alt="prichina1-mobile" id="prichina1-mobile" src="assets/themes/base/img/backgrounds/prichina1-mobile.png" style="max-width: 300px; padding: 0 100px;"> 
-                            <img alt="prichina2-mobile" id="prichina2-mobile" src="assets/themes/base/img/backgrounds/prichina2-mobile.png" style="max-width: 300px; padding: 0 100px;"> 
-                            <img alt="prichina3-mobile" id="prichina3-mobile" src="assets/themes/base/img/backgrounds/prichina3-mobile.png" style="max-width: 300px; padding: 0 100px;"> 
+                            <img alt="prichina1-mobile" id="prichina1-mobile" class="lazyload" data-src="assets/themes/base/img/backgrounds/prichina1-mobile.png" style="max-width: 300px; padding: 0 100px;"> 
+                            <img alt="prichina2-mobile" id="prichina2-mobile" class="lazyload" data-src="assets/themes/base/img/backgrounds/prichina2-mobile.png" style="max-width: 300px; padding: 0 100px;"> 
+                            <img alt="prichina3-mobile" id="prichina3-mobile" class="lazyload" data-src="assets/themes/base/img/backgrounds/prichina3-mobile.png" style="max-width: 300px; padding: 0 100px;"> 
                             <button class="c-block-5-control_next-mobile"><i class="fa fa-chevron-right"></i></button> 
                             <button class="c-block-5-control_prev-mobile"><i class="fa fa-chevron-left"></i></button>
 
@@ -403,9 +403,9 @@
 								Шумные толпы и длинные очереди точно не будут вам мешать в нашей студии
 							</div>
 						</div>
-                        <img alt="prichina1-mobile" class="c-block-5-img-mobile" height="300" id="prichina1-img-mobile" src="assets/themes/base/img/backgrounds/prichina1.png"> 
-                        <img alt="prichina2-mobile" class="c-block-5-img-mobile" height="300" id="prichina2-img-mobile" src="assets/themes/base/img/backgrounds/prichina2.png"> 
-                        <img alt="prichina3-mobile" class="c-block-5-img-mobile" height="300" id="prichina3-img-mobile" src="assets/themes/base/img/backgrounds/prichina3.png">
+                        <img alt="prichina1-mobile" class="c-block-5-img-mobile lazyload" height="300" id="prichina1-img-mobile" data-src="assets/themes/base/img/backgrounds/prichina1.png"> 
+                        <img alt="prichina2-mobile" class="c-block-5-img-mobile lazyload" height="300" id="prichina2-img-mobile" data-src="assets/themes/base/img/backgrounds/prichina2.png"> 
+                        <img alt="prichina3-mobile" class="c-block-5-img-mobile lazyload" height="300" id="prichina3-img-mobile" data-src="assets/themes/base/img/backgrounds/prichina3.png">
                     </div>
 					</div>
 				</div>
@@ -413,7 +413,7 @@
 
 
 			<section class="c-block-6">
-				<img alt="phalaenopsis-orchid" class="c-block-6-image" src="assets/themes/base/img/backgrounds/phalaenopsis-orchid.png" width="420">
+				<img alt="phalaenopsis-orchid" class="c-block-6-image lazyload" data-src="assets/themes/base/img/backgrounds/phalaenopsis-orchid.png" width="420">
 
 				<div class="c-block-2__caption c-block-6__caption">
 					<span style="font-style: italic; font-weight: bold;">Фотографии студии</span>
@@ -464,8 +464,8 @@
 				<div class="c-block-7__caption">
 					<span style="font-weight: bold; font-style: italic;">Выбери</span> своего тренера
 				</div>
-                <img alt="trophy-big" class="c-block-7-trophy" src="assets/themes/base/img/backgrounds/trophy-big.png" width="250"> 
-                <img alt="weight3" class="c-block-7-weight3" src="assets/themes/base/img/backgrounds/weight3.png" width="150">
+                <img alt="trophy-big" class="c-block-7-trophy lazyload" data-src="assets/themes/base/img/backgrounds/trophy-big.png" width="250"> 
+                <img alt="weight3" class="c-block-7-weight3 lazyload" data-src="assets/themes/base/img/backgrounds/weight3.png" width="150">
 
 				<div class="c-block-7-tabs">
                     <input checked id="tab_1" name="tabs" type="radio"> <label for="tab_1" id="label_tab_1" title="Жанна">Жанна</label> 
@@ -474,10 +474,10 @@
                     <input id="tab_4" name="tabs" type="radio"> <label for="tab_4" id="label_tab_4" title="Стелла">Стелла</label>
 
 					<section id="content1">
-						<img alt="zhanna-big" class="c-block-7-trener1" height="700" src="assets/themes/base/img/backgrounds/zhanna-big.png">
+						<img alt="zhanna-big" class="c-block-7-trener1 lazyload" height="700" data-src="assets/themes/base/img/backgrounds/zhanna-big.png">
 
 						<div class="c-block-7-tabs-container">
-							<img alt="question" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/question.png">
+							<img alt="question" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/question.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Основная информация
@@ -486,7 +486,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Тренерский стаж Жанны составляет более 20 лет
 							</div>
-							<img alt="trophy" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/trophy.png">
+							<img alt="trophy" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/trophy.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Достижения
@@ -495,7 +495,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Закончила московский областной педагогической институт имени Н.К.Крупской по специальности «Физическая культура» в 1991 году.
 							</div>
-							<img alt="star" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/star.png">
+							<img alt="star" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/star.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Интересные факты о тренере
@@ -509,10 +509,10 @@
 					</section>
 
 					<section id="content2">
-						<img alt="ludmila-big" class="c-block-7-trener1" height="700" src="assets/themes/base/img/backgrounds/ludmila-big.png">
+						<img alt="ludmila-big" class="c-block-7-trener1 lazyload" height="700" data-src="assets/themes/base/img/backgrounds/ludmila-big.png">
 
 						<div class="c-block-7-tabs-container">
-							<img alt="question" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/question.png">
+							<img alt="question" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/question.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Основная информация
@@ -521,7 +521,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Людмила пошла по спортивной дорожке 20 лет назад, а 9 лет назад провела первые групповые тренировки в качестве преподавателя
 							</div>
-							<img alt="trophy" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/trophy.png">
+							<img alt="trophy" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/trophy.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Достижения
@@ -530,7 +530,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Постоянно обучается и проходит курсы повышения квалификации
 							</div>
-							<img alt="star" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/star.png">
+							<img alt="star" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/star.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Интересные факты о тренере
@@ -546,10 +546,10 @@
 
 
 					<section id="content3">
-						<img alt="yulia-big" class="c-block-7-trener1" height="700" src="assets/themes/base/img/backgrounds/yulia-big.png">
+						<img alt="yulia-big" class="c-block-7-trener1 lazyload" height="700" data-src="assets/themes/base/img/backgrounds/yulia-big.png">
 
 						<div class="c-block-7-tabs-container">
-							<img alt="question" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/question.png">
+							<img alt="question" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/question.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Основная информация
@@ -558,7 +558,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Юлия профессионально тренерует девушек уже 3 года, а сама занимается на протяжении 7 лет
 							</div>
-							<img alt="trophy" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/trophy.png">
+							<img alt="trophy" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/trophy.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Достижения
@@ -567,7 +567,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Вице-чемпионка Москвы и России по пауэрлифтингу
 							</div>
-							<img alt="star" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/star.png">
+							<img alt="star" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/star.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Интересные факты о тренере
@@ -582,10 +582,10 @@
 					</section>
 
 					<section id="content4">
-						<img alt="stella-big" class="c-block-7-trener1" height="700" src="assets/themes/base/img/backgrounds/stella-big.png">
+						<img alt="stella-big" class="c-block-7-trener1 lazyload" height="700" data-src="assets/themes/base/img/backgrounds/stella-big.png">
 
 						<div class="c-block-7-tabs-container">
-							<img alt="question" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/question.png">
+							<img alt="question" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/question.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Основная информация
@@ -595,7 +595,7 @@
 								Сертифицированный персональный тренер, работает 2 года, в спорте с 8 лет.
 								Работа на набор мышечной массы, похудение, растяжку, коррекцию осанки, работа с беременными.
 							</div>
-							<img alt="trophy" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/trophy.png">
+							<img alt="trophy" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/trophy.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Достижения
@@ -604,7 +604,7 @@
 							<div class="c-block-7-tabs-container-text">
 								Довела свою Клиентку до результата -20 кг.
 							</div>
-							<img alt="star" class="c-block-7-tabs-container-icon" src="assets/themes/base/img/backgrounds/star.png">
+							<img alt="star" class="c-block-7-tabs-container-icon lazyload" data-src="assets/themes/base/img/backgrounds/star.png">
 
 							<div class="c-block-7-tabs-container-caption">
 								Интересные факты о тренере
@@ -643,7 +643,7 @@
 
 
 			<section class="c-block-8">
-				<img alt="fitness-small" class="c-block-8-fitness" height="280" src="assets/themes/base/img/backgrounds/fitness-small.png">
+				<img alt="fitness-small" class="c-block-8-fitness lazyload" height="280" data-src="assets/themes/base/img/backgrounds/fitness-small.png">
 
 				<div class="c-block-8-wrapper">
 					<div class="c-block-8-caption">
@@ -656,16 +656,16 @@
 						блюд и начни питаться правильно уже<br>
 						сегодня
 					</div>
-                    <img alt="brochure-a4-mockup" class="c-block-8-brochure-mobile" height="430" src="assets/themes/base/img/backgrounds/c-block-8-mobile.png"> 
+                    <img alt="brochure-a4-mockup" class="c-block-8-brochure-mobile lazyload" height="430" data-src="assets/themes/base/img/backgrounds/c-block-8-mobile.png"> 
                     <button class="button" id="recipes-download" type="button">СКАЧАТЬ</button>
 				</div>
-				<img alt="brochure-a4-mockup" class="c-block-8-brochure" height="400" src="assets/themes/base/img/backgrounds/c-block-8.png">
+				<img alt="brochure-a4-mockup" class="c-block-8-brochure lazyload" height="400" data-src="assets/themes/base/img/backgrounds/c-block-8.png">
 
 				<div id="c-block-8-bg_layer" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: black; opacity: 0.5; z-index:99;">
 				</div>
 
 				<div class="c-block-8__recipes-popup" id="recipes-popup">
-					<img alt="recipes" class="c-block-8-recipes" height="410" src="assets/themes/base/img/backgrounds/recipes.png">
+					<img alt="recipes" class="c-block-8-recipes lazyload" height="410" data-src="assets/themes/base/img/backgrounds/recipes.png">
 
 					<div class="c-block-8-wrapper" style="display: flex; flex-wrap: wrap; justify-content: center;">
 						<img alt="logo" class="c-block-8-logo" height="70" src="assets/themes/base/img/c-block-1-logo.png">
@@ -699,14 +699,14 @@
 					Ответь на 5 вопросов и получи<br>
 					<span style="font-style: italic; font-weight: bolder; color: #b12c71;">15% скидку</span> на свой первый абонемент
 				</div>
-                <img alt="carpet" class="c-block-9-carpet1" src="assets/themes/base/img/backgrounds/carpet.png"> 
-                <img alt="carpet" class="c-block-9-carpet2" src="assets/themes/base/img/backgrounds/carpet2.png"> 
-                <img alt="fitness-ball" class="c-block-9-fitness-ball" src="assets/themes/base/img/backgrounds/fitness-ball.png" width="250">
+                <img alt="carpet" class="c-block-9-carpet1 lazyload" data-src="assets/themes/base/img/backgrounds/carpet.png"> 
+                <img alt="carpet" class="c-block-9-carpet2 lazyload" data-src="assets/themes/base/img/backgrounds/carpet2.png"> 
+                <img alt="fitness-ball" class="c-block-9-fitness-ball lazyload" data-src="assets/themes/base/img/backgrounds/fitness-ball.png" width="250">
 
 				<div class="page-wrapper">
 					<div class="wrapper wrapper--w900">
 						<div class="card card-1">
-							<img alt="woman" class="card-1-woman" height="580" src="assets/themes/base/img/backgrounds/woman.png">
+							<img alt="woman" class="card-1-woman lazyload" height="580" data-src="assets/themes/base/img/backgrounds/woman.png">
 
 							<div class="card-body">
 								<form action="mail_quiz_main.php" class="c-block-9-form" id="js-wizard-form" method="post" name="js-wizard-form">
@@ -881,22 +881,22 @@
 
 				<div class="c-block-10-tabs">
 					<section id="c-block-10-content1">
-                        <img alt="feedback1" class="c-block-10-feedback" src="assets/themes/base/img/backgrounds/feedback1.png"> 
-                        <img alt="feedback1" class="c-block-10-feedback-mobile" src="assets/themes/base/img/backgrounds/feedback1-mobile.png">
+                        <img alt="feedback1" class="c-block-10-feedback lazyload" data-src="assets/themes/base/img/backgrounds/feedback1.png"> 
+                        <img alt="feedback1" class="c-block-10-feedback-mobile lazyload" data-src="assets/themes/base/img/backgrounds/feedback1-mobile.png">
 					</section>
 
 					<section id="c-block-10-content2">
-                        <img alt="feedback2" class="c-block-10-feedback" src="assets/themes/base/img/backgrounds/feedback2.png"> 
-                        <img alt="feedback2" class="c-block-10-feedback-mobile" src="assets/themes/base/img/backgrounds/feedback2-mobile.png">
+                        <img alt="feedback2" class="c-block-10-feedback lazyload" data-src="assets/themes/base/img/backgrounds/feedback2.png"> 
+                        <img alt="feedback2" class="c-block-10-feedback-mobile lazyload" data-src="assets/themes/base/img/backgrounds/feedback2-mobile.png">
 					</section>
 
 					<section id="c-block-10-content3">
-                        <img alt="feedback3" class="c-block-10-feedback" src="assets/themes/base/img/backgrounds/feedback3.png"> 
-                        <img alt="feedback3" class="c-block-10-feedback-mobile" src="assets/themes/base/img/backgrounds/feedback3-mobile.png">
+                        <img alt="feedback3" class="c-block-10-feedback lazyload" data-src="assets/themes/base/img/backgrounds/feedback3.png"> 
+                        <img alt="feedback3" class="c-block-10-feedback-mobile lazyload" data-src="assets/themes/base/img/backgrounds/feedback3-mobile.png">
 					</section>
 
 					<div class="c-block-10-wrapper" id="c-block-10-wrapper">
-                        <img alt="phalaenopsis-orchid-2" class="c-block-10-phalaenopsis-orchid-2" src="assets/themes/base/img/backgrounds/phalaenopsis-orchid-2.png"> 
+                        <img alt="phalaenopsis-orchid-2" class="c-block-10-phalaenopsis-orchid-2 lazyload" data-src="assets/themes/base/img/backgrounds/phalaenopsis-orchid-2.png"> 
                         <input checked id="c-block-10-tab_1" name="c-block-10-tabs" type="radio"> 
                         <label for="c-block-10-tab_1" title="Отзыв Софии">Отзыв Софии</label> 
                         <input id="c-block-10-tab_2" name="c-block-10-tabs" type="radio"> 
@@ -913,8 +913,8 @@
                     <span style="font-style: italic; font-weight: bold; color: rgb(254, 153, 205);">
                         Скачайте полное</span><br>описание и цены <br>программ
                 </div>
-                <img src="assets/themes/base/img/backgrounds/journal-2-mobile.png" alt="journal-2"
-                    class="c-block-11-journal-mobile">
+                <img data-src="assets/themes/base/img/backgrounds/journal-2-mobile.png" alt="journal-2"
+                    class="c-block-11-journal-mobile lazyload">
                 <form action="mail_prices.php" method="POST" class="c-block-11__form-block" id="c-block-11-form">
                     <label class="label">
                         <img src="assets/themes/base/img/backgrounds/avatar.png" alt="avatar" class="label-avatar">
@@ -930,7 +930,7 @@
                         СКАЧАТЬ ОПИСАНИЕ И ЦЕНЫ
                     </button>
                 </form>
-                <img src="assets/themes/base/img/backgrounds/journal-2.png" alt="journal-2" class="c-block-11-journal">
+                <img data-src="assets/themes/base/img/backgrounds/journal-2.png" alt="journal-2" class="c-block-11-journal lazyload">
             </section>
 
 
@@ -952,7 +952,7 @@
 						<div class="c-block-12-social-text">
 							Следи за нами<br>в социальных<br>сетях
 						</div>
-						<img alt="social" class="c-block-12-social" src="assets/themes/base/img/backgrounds/social.png">
+						<img alt="social" class="c-block-12-social lazyload" data-src="assets/themes/base/img/backgrounds/social.png">
 
 						<div class="c-block-12-social-wrapper-a">
                             <a href="https://www.instagram.com/colibri.fitness/" target="_blank">Instagram<br></a> 
@@ -966,7 +966,7 @@
 
 		<footer class="footer">
 			<div class="footer-phone-wrapper">
-                <img alt="phone-icon" class="footer-phone-icon" src="assets/themes/base/img/backgrounds/phone-icon.png"> 
+                <img alt="phone-icon" class="footer-phone-icon lazyload" data-src="assets/themes/base/img/backgrounds/phone-icon.png"> 
                 <a class="footer-phone" href="tel:84951202282">+7 (495) 120-22-82</a>
 			</div>
 
@@ -1023,7 +1023,7 @@
 
 		<div class="marathon-popup" id="marathon-popup">
 			<div class="marathon-popup-wrapper" style="width: min-content;">
-				<img alt="logo" width="320" src="assets/themes/base/img/backgrounds/marathon.png">
+				<img alt="logo" width="320" data-src="assets/themes/base/img/backgrounds/marathon.png" class="lazyload">
 
 				<div class="marathon-popup-caption">
 					Марафон <br> "Колибри старт"
@@ -1043,7 +1043,8 @@
         <iframe allowfullscreen frameborder="0" id="vimeo-iframe" name="vimeo-iframe" src="https://player.vimeo.com/video/315128195?byline=0&portrait=0" title="vimeo_iframe"></iframe> 
         <span class="close">&times;</span>
 	</div>
-	<script src="assets/scripts/script.js"></script> 
+	<script src="assets/scripts/script.js"></script>
+	<script src="assets/scripts/lazysizes.min.js" async=""></script>
 	<script src="https://player.vimeo.com/api/player.js"></script>
     
     <!-- Yandex.Metrika counter -->
