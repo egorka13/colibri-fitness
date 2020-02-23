@@ -577,32 +577,32 @@ for (let i = 0; i < tab_pane.length - 1; i++) {
 
 // Обработчик закрытия окна с марафоном
 
-let marathon_popup = document.getElementById('marathon-popup'),
-    marathon_popup_tel = document.getElementById('marathon-popup-tel'),
-    marathon_popup_close = document.getElementById('marathon-popup-close');
+// let marathon_popup = document.getElementById('marathon-popup'),
+//     marathon_popup_tel = document.getElementById('marathon-popup-tel'),
+//     marathon_popup_close = document.getElementById('marathon-popup-close');
 
-window.onload = function () {
-    if (localStorage.getItem("marathon") !== "viewed" && $(window).width() < 450) {
-        marathon_popup.style.display = "block";
-        c_block_1_bg_layer.style.display = "block";
-        clearInterval(refreshIntervalId);
-    }
-};
+// window.onload = function () {
+//     if (localStorage.getItem("marathon") !== "viewed" && $(window).width() < 450) {
+//         marathon_popup.style.display = "block";
+//         c_block_1_bg_layer.style.display = "block";
+//         clearInterval(refreshIntervalId);
+//     }
+// };
 
-marathon_popup_close.onclick = function () {
-    localStorage.setItem("marathon", "viewed");
-    marathon_popup.style.display = "none";
-    c_block_1_bg_layer.style.display = "none";
-    refreshIntervalId = customSetInterval();
-};
+// marathon_popup_close.onclick = function () {
+//     localStorage.setItem("marathon", "viewed");
+//     marathon_popup.style.display = "none";
+//     c_block_1_bg_layer.style.display = "none";
+//     refreshIntervalId = customSetInterval();
+// };
 
-function onMarathonButtonClick() {
-    marathon_popup_tel.click();
-    localStorage.setItem("marathon", "viewed");
-    marathon_popup.style.display = "none";
-    c_block_1_bg_layer.style.display = "none";
-    refreshIntervalId = customSetInterval();
-}
+// function onMarathonButtonClick() {
+//     marathon_popup_tel.click();
+//     localStorage.setItem("marathon", "viewed");
+//     marathon_popup.style.display = "none";
+//     c_block_1_bg_layer.style.display = "none";
+//     refreshIntervalId = customSetInterval();
+// }
 
 // Показывать всплывающее окно "Ваша заявка отправлена" -->
 

@@ -486,17 +486,11 @@ body,
 /* Blocks */
 
 .layout .c-block-promotion {
-  display: none;
-}
-
-@media screen and (min-width: 450px) {
-  .layout .c-block-promotion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .layout .c-block-promotion__left {
@@ -523,6 +517,7 @@ body,
 @media screen and (max-width: 550px) {
   .layout .c-block-promotion__left-caption {
     font-size: 20px;
+    padding: 10px 10px;
   }
 }
 
