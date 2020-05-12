@@ -71,17 +71,17 @@
 }
 
 .c-block-9 label[for*="1"]:before {
-    content: url(../img/backgrounds/favorite-heart-button.png);
+    content: url(../img/backgrounds/webp/favorite-heart-button.webp);
     padding-right: 10px;
 }
 
 .c-block-9 label[for*="2"]:before {
-    content: url(../img/backgrounds/favorite-heart-button.png);
+    content: url(../img/backgrounds/webp/favorite-heart-button.webp);
     padding-right: 10px;
 }
 
 .c-block-9 label[for*="3"]:before {
-    content: url(../img/backgrounds/favorite-heart-button.png);
+    content: url(../img/backgrounds/webp/favorite-heart-button.webp);
     padding-right: 10px;
 }
 

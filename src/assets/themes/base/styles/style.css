@@ -541,7 +541,7 @@ body,
   position: relative;
   height: 670px;
   padding: 0 200px;
-  background: url("../img/backgrounds/c-block-1.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/c-block-1.webp") no-repeat center top / cover;
 }
 
 @media screen and (max-width: 1400px) {
@@ -618,7 +618,7 @@ body,
   border-color: rgba(255, 255, 255, 0.188);
   border-style: solid;
   border-radius: 4px;
-  background: url("../img/backgrounds/location.png") no-repeat 9px 5px;
+  background: url("../img/backgrounds/webp/location.webp") no-repeat 9px 5px;
 }
 
 @media screen and (max-width: 1010px) {
@@ -730,7 +730,7 @@ body,
   font-weight: bold;
   color: #fee599;
   line-height: 0.913;
-  background: url("../img/backgrounds/phone.png") no-repeat;
+  background: url("../img/backgrounds/webp/phone.webp") no-repeat;
 }
 
 .layout .c-block-1__header-contacts-phone-link:hover {
@@ -1038,7 +1038,7 @@ body,
   z-index: 999;
   height: 150px;
   padding: 30px 0 0 40px;
-  background: url("../img/backgrounds/location-popup.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/location-popup.webp") no-repeat center top / cover;
 }
 
 .layout .c-block-1__location-popup-address {
@@ -1058,7 +1058,7 @@ body,
   z-index: 999;
   height: 150px;
   padding: 30px 0 0 40px;
-  background: url("../img/backgrounds/location-popup.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/location-popup.webp") no-repeat center top / cover;
 }
 
 .layout .c-block-1__phone-popup-phone {
@@ -1152,12 +1152,12 @@ body,
 }
 
 .layout .c-block-1__download-popup label[for*="1"]:before {
-  content: url("../img/backgrounds/favorite-heart-button.png");
+  content: url("../img/backgrounds/webp/favorite-heart-button.webp");
   padding-right: 10px;
 }
 
 .layout .c-block-1__download-popup label[for*="2"]:before {
-  content: url("../img/backgrounds/favorite-heart-button.png");
+  content: url("../img/backgrounds/webp/favorite-heart-button.webp");
   padding-right: 10px;
 }
 
@@ -1166,7 +1166,7 @@ body,
 }
 
 .layout .c-block-1__download-popup input:checked + label:before {
-  content: url("../img/backgrounds/favorite-heart-button-active.png");
+  content: url("../img/backgrounds/webp/favorite-heart-button-active.webp");
 }
 
 .layout .c-block-1__download-popup .button {
@@ -1424,13 +1424,13 @@ body,
   position: relative;
   height: 755px;
   margin-top: 100px;
-  background: url("../img/backgrounds/c-block-3.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/c-block-3.webp") no-repeat center top / cover;
 }
 
 @media screen and (max-width: 700px) {
   .layout .c-block-3 {
     height: 2200px;
-    background: url("../img/backgrounds/c-block-3-mobile.png") no-repeat center top / cover;
+    background: url("../img/backgrounds/webp/c-block-3-mobile.webp") no-repeat center top / cover;
   }
 }
 
@@ -1841,7 +1841,7 @@ body,
 .layout .c-block-5 {
   position: relative;
   height: 986px;
-  background: url("../img/backgrounds/c-block-5.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/c-block-5.webp") no-repeat center top / cover;
 }
 
 @media screen and (max-width: 900px) {
@@ -2067,7 +2067,7 @@ body,
 .layout .c-block-7 {
   position: relative;
   height: 1009px;
-  background: url("../img/backgrounds/c-block-7.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/c-block-7.webp") no-repeat center top / cover;
 }
 
 @media screen and (max-width: 818px) {
@@ -2411,7 +2411,7 @@ body,
 .layout .c-block-9 {
   position: relative;
   height: 968px;
-  background: url("../img/backgrounds/c-block-9.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/c-block-9.webp") no-repeat center top / cover;
 }
 
 @media screen and (max-width: 755px) {
@@ -2594,7 +2594,7 @@ body,
   padding-left: 15%;
   position: relative;
   height: 653px;
-  background: url("../img/backgrounds/c-block-11.png") no-repeat center top / cover;
+  background: url("../img/backgrounds/webp/c-block-11.webp") no-repeat center top / cover;
   z-index: 1;
 }
 
@@ -3409,47 +3409,47 @@ body,
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide1 {
-  background: url("../img/mockup/mockup poster 21.jpg") no-repeat center center;
+  background: url("../img/mockup/webp/mockup poster 21.webp") no-repeat center center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide2 {
-  background: url("../img/mockup/mockup poster 22.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 22.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide3 {
-  background: url("../img/mockup/mockup poster 23.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 23.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide4 {
-  background: url("../img/mockup/mockup poster 24.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 24.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide5 {
-  background: url("../img/mockup/mockup poster 25.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 25.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide6 {
-  background: url("../img/mockup/mockup poster 26.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 26.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide7 {
-  background: url("../img/mockup/mockup poster 27.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 27.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide8 {
-  background: url("../img/mockup/mockup poster 28.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 28.webp") no-repeat top center;
   background-size: contain;
 }
 
 .c-block-6-slider-wrapper #c-block-6-slide9 {
-  background: url("../img/mockup/mockup poster 29.jpg") no-repeat top center;
+  background: url("../img/mockup/webp/mockup poster 29.webp") no-repeat top center;
   background-size: contain;
 }
 
