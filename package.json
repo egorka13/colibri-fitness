@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "Colibri fitness main page",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/gulp/bin/gulp.js watch",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "author": "Egor Shirobokov <eashirobokov@gmail.com>",
   "license": "MIT",
