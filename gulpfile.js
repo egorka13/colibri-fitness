@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
+    replace = require('gulp-replace'),
     browserSync = require('browser-sync'),
     concatCSS = require('gulp-concat-css'),
     del = require('del'),
@@ -36,13 +37,21 @@ gulp.task('clean', function () {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
+gulp.task('cacheBustTask', function() {
+    const cbString = new Date().getTime();
+
+	return gulp.src('src/index.html')
+		.pipe(replace(/version=\d+/, `version=${cbString}`))
+		.pipe(gulp.dest('dist'));
+});
+
 gulp.task('img', function () {
     return gulp.src('src/assets/themes/base/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/assets/themes/base/img'));
 });
 
-gulp.task('build', ['clean', 'img', 'less'], function () {
+gulp.task('build', ['clean', 'img', 'less', 'cacheBustTask'], function () {
 
     var buildCss = gulp.src(['src/assets/themes/base/styles/*.css'])
         .pipe(gulp.dest('dist/assets/themes/base/styles'));
@@ -62,8 +71,8 @@ gulp.task('build', ['clean', 'img', 'less'], function () {
     var buildJs = gulp.src('src/assets/scripts/**/*.js')
         .pipe(gulp.dest('dist/assets/scripts'));
 
-    var buildHtml = gulp.src('src/*.html')
-        .pipe(gulp.dest('dist'));
+    // var buildHtml = gulp.src('src/*.html')
+    //     .pipe(gulp.dest('dist'));
 
 });
 
