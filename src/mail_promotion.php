@@ -7,7 +7,7 @@ $mail->CharSet = 'utf-8';
 if(isset($_POST['user_name']) and isset($_POST['user_phone'])) {
   $name = $_POST['user_name'];
   $phone = $_POST['user_phone'];
-  $answer = $_POST['special_offer'];
+  // $answer = $_POST['special_offer'];
   
   $name = htmlspecialchars($name);
   $name = urldecode($name);
@@ -35,7 +35,7 @@ if(isset($_POST['user_name']) and isset($_POST['user_phone'])) {
   $mail->isHTML(true);                                    // Set email format to HTML
 
   $mail->Subject = 'Заявка с сайта Colibri Fitness';
-  $mail->Body    = '<p>Это сообщение было отправлено с помощью формы <b>"Персональная тренировка за 790 рублей".</b></p><br /><p><b>' .$name . '</b> оставила заявку, её телефон: <b>' . $phone . '</b></p><br /><p>Выбранное спец. предложение: <b>' . $answer . '</b></p>';
+  $mail->Body    = '<p>Это сообщение было отправлено с помощью формы <b>"Онлайн тренировка бесплатно".</b></p><br /><p><b>' .$name . '</b> оставила заявку, её телефон: <b>' . $phone . '</b></p>';
   $mail->AltBody = '';
 
   if(!$mail->send()) {

@@ -1,4 +1,20 @@
 .layout {
+  & .c-block-whatsapp {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 999999;
+
+    &__icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
+  }
+
   & .c-block-promotion {
     // display: none;
 
@@ -9,9 +25,15 @@
 
     &__left {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
+      align-items: center;
       flex-grow: 0.3;
       background: #fe99cd;
+      padding: 6px 0;
+
+      @media screen and (max-width: 550px) {
+        padding: 0 10px;
+      }
 
       &-caption {
         font-size: 28px;
@@ -89,12 +111,16 @@
         padding: 20px 5px 0;
       }
 
+      @media screen and (max-width: 728px) {
+        justify-content: center;
+      }
+
       @media screen and (max-width: 450px) {
         justify-content: space-evenly;
       }
 
       &-address {
-        padding: 4px 0 4px 33px !important;
+        padding: 4px 4px 4px 33px !important;
         margin-right: 30px;
 
         font-size: 15px;
@@ -106,7 +132,13 @@
         border-style: solid;
         border-radius: 4px;
 
-        background: url("../img/backgrounds/location.png") no-repeat 9px 5px;
+        background: url("../img/icons/geo-icon.png") no-repeat 5px 13px;
+        background-size: 25px auto;
+
+        @media screen and (max-width: 1165px) {
+          background: none;
+          padding: 4px 6px !important;
+        }
 
         @media screen and (max-width: 1010px) {
           margin-left: 20px;
@@ -126,14 +158,14 @@
       }
 
       &-logo {
-        padding: 15px 15px;
+        padding: 0 15px;
 
         @media screen and (max-width: 830px) {
           padding: 2px 3px;
         }
 
         & > a > img {
-          width: 170px;
+          width: 70px;
 
           @media screen and (max-width: 1010px) {
             padding: 0 35px 0 35px;
@@ -150,6 +182,7 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 15px 0 15px 15px;
+        visibility: hidden;
 
         @media screen and (max-width: 1010px) {
           justify-content: center;
@@ -159,9 +192,13 @@
           padding: 2px 3px;
         }
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 728px) {
           display: none;
         }
+
+        // @media screen and (max-width: 450px) {
+        //   display: none;
+        // }
 
         &-phone {
           display: flex;
@@ -186,7 +223,12 @@
             color: rgb(254, 229, 153);
             line-height: 0.913;
 
-            background: url("../img/backgrounds/phone.png") no-repeat;
+            // Return after COVID-19
+            // background: url("../img/backgrounds/phone.png") no-repeat;
+
+            // Remove after COVID-19
+            background: url("../img/icons/whatsapp-icon2.png") no-repeat;
+            background-size: 18px 18px;
 
             &:hover {
               text-decoration: underline;
@@ -305,7 +347,7 @@
 
       &-timetable {
         position: absolute;
-        bottom: 210px;
+        bottom: 230px;
         left: 500px;
 
         @media screen and (max-width: 1290px) {
@@ -327,7 +369,7 @@
         }
 
         @media screen and (max-width: 450px) {
-          bottom: -126px;
+          bottom: -108px;
           left: 40%;
         }
 
@@ -344,7 +386,7 @@
 
         &-journal1 {
           position: absolute;
-          bottom: -257px;
+          bottom: -282px;
           right: 20px;
 
           @media screen and (max-width: 635px) {
@@ -367,12 +409,12 @@
 
       &-woman {
         position: absolute;
-        bottom: -37px;
+        bottom: -63px;
         left: 625px;
         width: 490px;
 
         @media screen and (max-width: 1290px) {
-          bottom: -52px;
+          bottom: -78px;
           left: 55%;
         }
 
@@ -458,7 +500,7 @@
 
         & > img {
           position: absolute;
-          top: -7px;
+          top: 3px;
           right: -46px;
 
           @media screen and (max-width: 390px) {
