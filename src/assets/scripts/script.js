@@ -46,10 +46,7 @@ function customSetInterval() {
 }
 
 if ($(window).width() < 450) {
-    // Return after COVID-19
-    // phone_icon.style.display = "block";
-    // Remove after COVID-19
-    whatsapp_icon.style.display = "block";
+    phone_icon.style.display = "block";
 } else {
     phone_icon.style.display = "none";
 }
@@ -57,45 +54,45 @@ if ($(window).width() < 450) {
 window.addEventListener("resize", function () {
     if ($(window).width() < 450) {
         // Поменять местами значения после COVID-19
-        phone_icon.style.display = "none";
-        whatsapp_icon.style.display = "block";
+        phone_icon.style.display = "block";
+        whatsapp_icon.style.display = "none";
     } else {
         phone_icon.style.display = "none";
         whatsapp_icon.style.display = "none";
     }
 })
 
-// var refreshIntervalId = customSetInterval();
+var refreshIntervalId = customSetInterval();
 
 location_icon.addEventListener("click", function () {
     location_popup.style.display = "flex";
     c_block_1_bg_layer.style.display = "block";
-    // clearInterval(refreshIntervalId);
+    clearInterval(refreshIntervalId);
 }, passive = true);
 
 phone_icon.addEventListener("click", function () {
     phone_popup.style.display = "flex";
     c_block_1_bg_layer.style.display = "block";
-    // clearInterval(refreshIntervalId);
+    clearInterval(refreshIntervalId);
 }, passive = true);
 
 c_block_1_button.addEventListener("click", function () {
     c_block_1_popup.style.display = "flex";
     c_block_1_bg_layer.style.display = "block";
-    // clearInterval(refreshIntervalId);
+    clearInterval(refreshIntervalId);
 }, passive = true);
 
 c_block_1_close_button.onclick = function () {
     c_block_1_popup.style.display = "none";
     c_block_1_bg_layer.style.display = "none";
-    // refreshIntervalId = customSetInterval();
+    refreshIntervalId = customSetInterval();
 };
 
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         c_block_1_popup.style.display = "none";
         c_block_1_bg_layer.style.display = "none";
-        // refreshIntervalId = customSetInterval();
+        refreshIntervalId = customSetInterval();
     }
 }, passive = true);
 
@@ -104,7 +101,7 @@ document.addEventListener("keydown", function (event) {
         location_popup.style.display = "none";
         phone_popup.style.display = "none";
         c_block_1_bg_layer.style.display = "none";
-        // refreshIntervalId = customSetInterval();
+        refreshIntervalId = customSetInterval();
     }
 }, passive = true);
 
@@ -113,7 +110,7 @@ document.addEventListener("click", function () {
         location_popup.style.display = "none";
         phone_popup.style.display = "none";
         c_block_1_bg_layer.style.display = "none";
-        // refreshIntervalId = customSetInterval();
+        refreshIntervalId = customSetInterval();
     }
 }, passive = true);
 
@@ -123,10 +120,10 @@ burger__menu.style.display = "none";
 burger_icon.addEventListener("click", function () {
     if (burger__menu.style.display === "none") {
         burger__menu.style.display = "flex";
-        // clearInterval(refreshIntervalId);
+        clearInterval(refreshIntervalId);
     } else {
         burger__menu.style.display = "none";
-        // refreshIntervalId = customSetInterval();
+        refreshIntervalId = customSetInterval();
     }
 }, passive = true);
 
@@ -134,7 +131,7 @@ for (let i = 0; i < nav_items.length; i++) {
     nav_items[i].addEventListener("click", function () {
         burger__menu.style.display = "none";
         burger_icon.checked = false;
-        // refreshIntervalId = customSetInterval();
+        refreshIntervalId = customSetInterval();
     }, passive = true);
 }
 

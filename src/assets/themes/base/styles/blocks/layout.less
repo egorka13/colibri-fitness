@@ -111,8 +111,8 @@
         padding: 20px 5px 0;
       }
 
-      @media screen and (max-width: 728px) {
-        justify-content: center;
+      @media screen and (max-width: 750px) {
+        justify-content: space-around;
       }
 
       @media screen and (max-width: 450px) {
@@ -120,9 +120,6 @@
       }
 
       &-address {
-        padding: 4px 4px 4px 33px !important;
-        margin-right: 30px;
-
         font-size: 15px;
         line-height: 1.533;
         color: rgb(255, 255, 255);
@@ -132,26 +129,27 @@
         border-style: solid;
         border-radius: 4px;
 
-        background: url("../img/icons/geo-icon.png") no-repeat 5px 13px;
-        background-size: 25px auto;
-
-        @media screen and (max-width: 1165px) {
-          background: none;
-          padding: 4px 6px !important;
-        }
-
-        @media screen and (max-width: 1010px) {
-          margin-left: 20px;
-        }
-
-        @media screen and (max-width: 728px) {
+        @media screen and (max-width: 450px) {
           display: none;
         }
 
         &-location {
-          padding-right: 15px;
+          padding: 4px 4px 4px 33px !important;
+          margin-right: 30px;
 
-          @media screen and (max-width: 1165px) {
+          background: url("../img/icons/geo-icon.png") no-repeat 5px 13px;
+          background-size: 25px auto;
+  
+          @media screen and (max-width: 1010px) {
+            margin-left: 20px;
+          }
+
+          @media screen and (max-width: 850px) {
+            background: none;
+            padding: 4px 6px !important;
+          }
+
+          @media screen and (max-width: 750px) {
             display: none;
           }
         }
@@ -192,21 +190,24 @@
           padding: 2px 3px;
         }
 
-        @media screen and (max-width: 728px) {
+        @media screen and (max-width: 750px) {
           display: none;
         }
-
-        // @media screen and (max-width: 450px) {
-        //   display: none;
-        // }
 
         &-phone {
           display: flex;
           align-items: center;
-          padding: 15px 0 15px 15px;
+          padding: 4px 4px 4px 25px;
+          margin-left: 9px;
+          margin-right: 30px;
 
-          @media screen and (max-width: 830px) {
+          background: url("../img/backgrounds/phone.png") no-repeat;
+          background-size: 18px auto;
+
+          @media screen and (max-width: 850px) {
+            background: none;
             padding: 2px 3px;
+            margin-left: 0;
           }
 
           @media screen and (max-width: 635px) {
@@ -214,21 +215,11 @@
           }
 
           &-link {
-            padding-left: 23px;
-
             text-decoration: none;
 
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 15px;
+            line-height: 1.533;
             color: rgb(254, 229, 153);
-            line-height: 0.913;
-
-            // Return after COVID-19
-            // background: url("../img/backgrounds/phone.png") no-repeat;
-
-            // Remove after COVID-19
-            background: url("../img/icons/whatsapp-icon2.png") no-repeat;
-            background-size: 18px 18px;
 
             &:hover {
               text-decoration: underline;
@@ -409,12 +400,12 @@
 
       &-woman {
         position: absolute;
-        bottom: -63px;
+        bottom: -56px;
         left: 625px;
         width: 490px;
 
         @media screen and (max-width: 1290px) {
-          bottom: -78px;
+          bottom: -71px;
           left: 55%;
         }
 
